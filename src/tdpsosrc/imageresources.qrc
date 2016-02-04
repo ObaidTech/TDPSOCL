@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>images/application.png</file>
+        <file>images/coreIcon.png</file>
+        <file>images/edge.png</file>
+        <file>images/mode.png</file>
+        <file>images/singleCore.png</file>
+        <file>images/action_log.png</file>
+        <file>images/document_black.png</file>
+        <file>images/draw_eraser.png</file>
+        <file>images/file_extension_bin.png</file>
+        <file>images/file_extension_qbb.png</file>
+        <file>images/node-tree.png</file>
+        <file>images/statistics.png</file>
+    </qresource>
+</RCC>

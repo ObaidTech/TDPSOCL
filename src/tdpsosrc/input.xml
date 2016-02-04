@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application Id="0" Name="MPEG-4 Decoder">
+	<Cores>
+		<Core Id="0" Name="RISC"/>
+		<Core Id="1" Name="Media CPU"/>
+		<Core Id="2" Name="VU"/>
+		<Core Id="3" Name="AU"/>
+		<Core Id="4" Name="RAST"/>
+		<Core Id="5" Name="ADSP"/>
+		<Core Id="6" Name="UP-SAMP"/>
+		<Core Id="7" Name="BAB"/>
+		<Core Id="8" Name="IDCT"/>
+		<Core Id="9" Name="SDRAM"/>
+		<Core Id="10" Name="SRAM1"/>
+		<Core Id="11" Name="SRAM2"/>
+	</Cores>
+	<CoreGraph Id="0" Name="Decoding Mode">
+		<Edges>
+			<Edge Id="0" From="2" To="9" Volume="190"/>
+			<Edge Id="1" From="3" To="9" Volume="0.5"/>
+			<Edge Id="2" From="1" To="9" Volume="60"/>
+			<Edge Id="3" From="1" To="10" Volume="40"/>
+			<Edge Id="4" From="4" To="9" Volume="600"/>
+			<Edge Id="5" From="4" To="10" Volume="40"/>
+			<Edge Id="6" From="8" To="11" Volume="250"/>
+			<Edge Id="7" From="5" To="9" Volume="0.5"/>
+			<Edge Id="8" From="6" To="9" Volume="910"/>
+			<Edge Id="9" From="6" To="11" Volume="670"/>
+			<Edge Id="10" From="7" To="9" Volume="32"/>
+			<Edge Id="11" From="7" To="11" Volume="173"/>
+			<Edge Id="12" From="0" To="11" Volume="500"/>
+		</Edges>
+	</CoreGraph>
+</Application>

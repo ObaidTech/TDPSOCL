@@ -74,7 +74,7 @@ int main(int argc, char **argv)
     
     // start logs 
 	cExecutableName = argv[0];
-    shrSetLogFileName ("oclVectorAdd.txt");
+    shrSetLogFileName ("oclVectorAdd2.txt");
     shrLog("%s Starting...\n\n# of float elements per Array \t= %i\n", argv[0], iNumElements); 
 
     // set and log Global and Local work size dimensions

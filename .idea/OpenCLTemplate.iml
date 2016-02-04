@@ -2,9 +2,37 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/obtabuer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/xmlcoregraphparser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/swapmove.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/communicationedge.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/readingdb.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/coregraph.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/reading.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/qcustomplot.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/mainview.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/application.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/particle.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/swapmove.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/readingdb.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/coreGraph.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/obtabuer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/qcustomplot.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/oboptimizer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/xmlcoregraphparser.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/application.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/mainview.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/particle.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/q_debugstream.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/communicationedge.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/oboptimizer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/core.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/core.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tdpsosrc/reading.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/oclsrc/oclVectorAdd.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/oclsrc/MedianFilter.cl" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/oclsrc/VectorAdd.cl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/oclsrc/MedianFilter.cl" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/bin" />
     </content>
@@ -14,6 +42,7 @@
         <CLASSES>
           <root url="file:///usr/include" />
           <root url="file:///usr/lib" />
+          <root url="file:///usr/lib64/qt-3.3" />
           <root url="file:///usr/local/include" />
           <root url="file:///opt/intel/composer_xe_2015.3.187/mkl/include" />
           <root url="file:///opt/intel/composer_xe_2015.3.187/tbb/include" />
@@ -26,6 +55,7 @@
         <SOURCES>
           <root url="file:///usr/include" />
           <root url="file:///usr/lib" />
+          <root url="file:///usr/lib64/qt-3.3" />
           <root url="file:///usr/local/include" />
           <root url="file:///opt/intel/composer_xe_2015.3.187/mkl/include" />
           <root url="file:///opt/intel/composer_xe_2015.3.187/tbb/include" />
@@ -37,8 +67,8 @@
         </SOURCES>
         <excluded>
           <root url="file://$MODULE_DIR$/src/oclsrc/oclVectorAdd.cpp" />
-          <root url="file://$MODULE_DIR$/src/oclsrc/MedianFilter.cl" />
           <root url="file://$MODULE_DIR$/src/oclsrc/VectorAdd.cl" />
+          <root url="file://$MODULE_DIR$/src/oclsrc/MedianFilter.cl" />
         </excluded>
       </library>
     </orderEntry>

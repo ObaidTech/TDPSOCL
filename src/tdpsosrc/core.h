@@ -18,7 +18,7 @@ class Core
 public:
     // BEGIN - Functions ------------ //
     Core(int coreId, string coreName);
-    string Core::toString();
+    string toString();
 
 
     template <typename T>

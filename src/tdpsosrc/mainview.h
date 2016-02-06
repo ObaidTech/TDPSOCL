@@ -31,7 +31,6 @@
 #include <application.h>
 #include <communicationedge.h>
 #include <vector>
-#include "Matrix.hpp"
 #include <oboptimizer.h>
 #include <math.h>
 #include <thread>
@@ -49,23 +48,23 @@ class MainVIew : public QMainWindow
 public:
     // BEGIN - Functions ------------ //
     explicit MainVIew(QWidget *parent = 0);
-    void MainVIew::deleteChildWidgets(QLayoutItem *item);
-    void MainVIew::removeGridChildren(QGridLayout *layout, int row, int column, bool deleteWidgets);
-    void MainVIew::setupScatterStyleDemo(QCustomPlot *customPlot);
-    void MainVIew::plotParticleCosts(std::vector<Particle>* particlesToPlot);
-    void MainVIew::printElementsInside(QDomNodeList root);
-    void MainVIew::generateTreeViewFromApp(Application anApp);
-    void MainVIew::printAllTrafficMatrices(Application anApp);
-    void MainVIew::makeListOfParticles(QStringListModel* mod);
-    void MainVIew::onIteratedAlgorithm(Application changeApplication, int iterNo);
-    QTreeWidgetItem* MainVIew::addTreeRoot(QString name, QString description);
-    QTreeWidgetItem* MainVIew::addTreeChild(QTreeWidgetItem *parent, QString name, QString description);
-    void MainVIew::plotGlobalCosts(std::vector<double>* allGlobalCosts);
-    void MainVIew::updateCurrentGenerationPlot(std::vector<Particle>* particlesToPlot);
-    void MainVIew::clearCurrentGenerationPlot();
-    void MainVIew::updateGlobalCostPlot();
-    void MainVIew::clearGlobalCostPlot();
-    void MainVIew::makeListOfParticles(std::vector<Particle>* particlesToShow);
+    void deleteChildWidgets(QLayoutItem *item);
+    void removeGridChildren(QGridLayout *layout, int row, int column, bool deleteWidgets);
+    void setupScatterStyleDemo(QCustomPlot *customPlot);
+    void plotParticleCosts(std::vector<Particle>* particlesToPlot);
+    void printElementsInside(QDomNodeList root);
+    void generateTreeViewFromApp(Application anApp);
+    void printAllTrafficMatrices(Application anApp);
+    void makeListOfParticles(QStringListModel* mod);
+    void onIteratedAlgorithm(Application changeApplication, int iterNo);
+    QTreeWidgetItem* addTreeRoot(QString name, QString description);
+    QTreeWidgetItem* addTreeChild(QTreeWidgetItem *parent, QString name, QString description);
+    void plotGlobalCosts(std::vector<double>* allGlobalCosts);
+    void updateCurrentGenerationPlot(std::vector<Particle>* particlesToPlot);
+    void clearCurrentGenerationPlot();
+    void updateGlobalCostPlot();
+    void clearGlobalCostPlot();
+    void makeListOfParticles(std::vector<Particle>* particlesToShow);
     ~MainVIew();
     // END - Functions ------------ //
 

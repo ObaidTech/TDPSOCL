@@ -11,15 +11,10 @@
 #include <string>
 #include <vector>
 #include <communicationedge.h>
-#include "Matrix.hpp"
 #include <sstream>
 #include <algorithm>
 
 using namespace std;
-using namespace YMatrix;
-
-// typedef for normal mathematical matrix with float as datatype.
-typedef Matrix<float,DenseMatrix,MathMatrix> MatrixM;
 
 class CoreGraph {
 public:
@@ -27,9 +22,9 @@ public:
     CoreGraph();
     CoreGraph(int modeID, int numOfCores, string modeName,  std::vector<CommunicationEdge> communicationEdges);
 	virtual ~CoreGraph();
-    MatrixM CoreGraph::getTrafficMatrix();
-    string CoreGraph::toString();
-    vector<int> CoreGraph::getCoresUsed();
+    int getTrafficMatrix();
+    string toString();
+    vector<int> getCoresUsed();
 
     template <typename T>
 

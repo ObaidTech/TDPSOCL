@@ -439,8 +439,8 @@ void MainVIew::printAllTrafficMatrices(Application anApp)
     for(int i = 0; i < anApp.Modes.size(); i++)
     {
         CoreGraph c = anApp.Modes.at(i);
-        MatrixM trafficMatrix = c.getTrafficMatrix();
-        cout << trafficMatrix;
+        // MatrixM trafficMatrix = c.getTrafficMatrix();
+        // cout << trafficMatrix;
     }
 }
 
@@ -761,7 +761,7 @@ void MainVIew::slotForOptimizerIterated(int IterationNo, Application* app, vecto
     dataMutex.lock();
     stringstream ss;
     ss << IterationNo << ", " << globalBestParticle->ParticleID << ", " << globalBestParticle->CurrentCost;
-    ui->dataLogTextBox->append(QString::fromStdString(ss.str()));
+    // ui->dataLogTextBox->append(QString::fromStdString(ss.str()));
     updateGlobalCostPlot();
     dataMutex.unlock();
     // cout << "Iterated Signal Received" << endl;
@@ -775,7 +775,7 @@ void MainVIew::slotForOptimizationStarted()
 
     stringstream ss;
     ss << "Iteration No., Global Best Particle ID, Global Best Cost";
-    ui->dataLogTextBox->append(QString::fromStdString(ss.str()));
+    // ui->dataLogTextBox->append(QString::fromStdString(ss.str()));
     // allGlobalCosts.clear();
     // allParticleCosts.clear();
 }
@@ -820,7 +820,7 @@ void MainVIew::on_optimizationTechniqueComboBox_currentIndexChanged(int index)
 }
 void MainVIew::postOutput(string str)
 {
-    ui->dataLogTextBox->append(QString::fromStdString(str));
+    // ui->dataLogTextBox->append(QString::fromStdString(str));
 }
 
 void MainVIew::on_runButton_3_clicked()
@@ -832,7 +832,7 @@ void MainVIew::on_runButton_3_clicked()
       if (file.open(QIODevice::ReadWrite))
       {
           QTextStream stream(&file);
-          stream << ui->dataLogTextBox->toPlainText() << endl;
+          // stream << ui->dataLogTextBox->toPlainText() << endl;
       }
     }
 }

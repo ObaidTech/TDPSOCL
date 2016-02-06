@@ -121,12 +121,12 @@ Application XMLCoreGraphParser::parseDocument(QDomDocument aDocToParse)
         {
             // printElementsInside(coreNodes);
             QDomNodeList rootCoreGraphNodes = applicationElement.elementsByTagName(elementApplicatonModeTagName);
-            for (int applicationMode = 0; applicationMode < rootCoreGraphNodes.count(); applicationMode++)
+            for (int am = 0; am < rootCoreGraphNodes.count(); am++)
             {
                 vector<CommunicationEdge> allCommunicationEdges;
                 QDomNodeList rootEdgesNode = rootCoreGraphNodes.at(0).toElement().elementsByTagName(elementEdgesRootTagName);
                 QDomNodeList edgeNodes = rootEdgesNode.at(0).toElement().elementsByTagName(elementEdgesTagName);
-                QDomElement applicationModeElement = rootCoreGraphNodes.at(applicationMode).toElement();
+                QDomElement applicationModeElement = rootCoreGraphNodes.at(am).toElement();
                 int modeId = stoi(applicationModeElement.attribute(AttributeId).toStdString());
                 string modeName = applicationModeElement.attribute(AttributeName).toStdString();
                 for(int edge = 0; edge < edgeNodes.count(); edge++)

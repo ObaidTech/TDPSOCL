@@ -28,10 +28,10 @@ class XMLCoreGraphParser
 public:
     // BEGIN - Functions ------------ //
     XMLCoreGraphParser();
-    Application XMLCoreGraphParser::generateCoreGraphFromString(string xmlAsString);
-    Application XMLCoreGraphParser::generateCoreGraphFromFile(string filePath);
-    Application XMLCoreGraphParser::parseDocument(QDomDocument aDocToParse);
-    void XMLCoreGraphParser::printElementsInside(QDomNodeList root);
+    Application generateCoreGraphFromString(string xmlAsString);
+    Application generateCoreGraphFromFile(string filePath);
+    Application parseDocument(QDomDocument aDocToParse);
+    void printElementsInside(QDomNodeList root);
     // END - Functions ------------ //
 
     // BEGIN - Properties ------------ //

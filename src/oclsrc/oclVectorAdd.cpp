@@ -65,7 +65,7 @@ void Cleanup (int argc, char **argv, int iExitCode);
 
 // Main function 
 // *********************************************************************
-int main(int argc, char **argv)
+int ymain(int argc, char **argv)
 {
     shrQAStart(argc, argv);
 

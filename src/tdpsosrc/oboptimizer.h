@@ -19,7 +19,7 @@
 #include <math.h>
 #include <swapmove.h>
 #include <mainview.h>
-#include <ui_mainview.h>
+// #include <ui_mainview.h>
 #include <QObject>
 #include <reading.h>
 #include <readingdb.h>
@@ -51,24 +51,24 @@ class OBOptimizer : public QObject
 public:
     // BEGIN - Functions ------------ //
     static OBOptimizer* Instance();
-    void OBOptimizer::iterate(vector<Particle> *oldParticles, OptimizationAlgorithm algorithm, bool firstIteration);
-    float OBOptimizer::getEuclideanDistance(vector<Particle>);
-    vector<Particle> OBOptimizer::generateParticles(int noOfParticles);
-    void OBOptimizer::evaluateCost(vector<Particle>* particlesToEvaluate);
-    int OBOptimizer::getCorePositionInParticle(int coreID, Particle p);
-    Particle* OBOptimizer::getBestCostParticle(vector<Particle>* allParticles);
-    vector<SwapMove> OBOptimizer::getSwapMoves(Particle sourceParticle, Particle destinationParticle);
-    void OBOptimizer::run();
-    void OBOptimizer::updateParticleLocalCost(vector<Particle>* allParticles);
-    vector<SwapMove> OBOptimizer::getSwapMoves(vector<int> sourceCoreArrangement, vector<int> destinationCoreArrangement);
-    void OBOptimizer::moveParticle(Particle* aParticle);
-    void OBOptimizer::applySwapMoves(vector<SwapMove> swaps, Particle* aParticle);
-    int OBOptimizer::getCorePositionInCoreArrangment(int coreIdToFind, vector<int> searchSpace);
-    void OBOptimizer::plotParticleCosts(std::vector<Particle>* particlesToPlot);
-    void OBOptimizer::plotGlobalCosts(std::vector<double>* allGlobalCosts);
-    void OBOptimizer::makeListOfParticles();
-    ReadingDB* OBOptimizer::findDBForParticle(int partID);
-    void OBOptimizer::updateTabuList();
+    void iterate(vector<Particle> *oldParticles, OptimizationAlgorithm algorithm, bool firstIteration);
+    float getEuclideanDistance(vector<Particle>);
+    vector<Particle> generateParticles(int noOfParticles);
+    void evaluateCost(vector<Particle>* particlesToEvaluate);
+    int getCorePositionInParticle(int coreID, Particle p);
+    Particle* getBestCostParticle(vector<Particle>* allParticles);
+    vector<SwapMove> getSwapMoves(Particle sourceParticle, Particle destinationParticle);
+    void run();
+    void updateParticleLocalCost(vector<Particle>* allParticles);
+    vector<SwapMove> getSwapMoves(vector<int> sourceCoreArrangement, vector<int> destinationCoreArrangement);
+    void moveParticle(Particle* aParticle);
+    void applySwapMoves(vector<SwapMove> swaps, Particle* aParticle);
+    int getCorePositionInCoreArrangment(int coreIdToFind, vector<int> searchSpace);
+    void plotParticleCosts(std::vector<Particle>* particlesToPlot);
+    void plotGlobalCosts(std::vector<double>* allGlobalCosts);
+    void makeListOfParticles();
+    ReadingDB* findDBForParticle(int partID);
+    void updateTabuList();
     // END - Functions ------------ //
 
     // BEGIN - Properties ------------ //
@@ -105,7 +105,7 @@ public:
 private:
     // BEGIN - Functions ------------ //
     OBOptimizer();
-    CoreGraph OBOptimizer::getModeFromModeNo(int ModeNo);
+    CoreGraph getModeFromModeNo(int ModeNo);
     // END - Functions ------------ //
 
     // BEGIN - Properties ------------ //

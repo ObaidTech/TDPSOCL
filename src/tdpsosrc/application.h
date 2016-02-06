@@ -22,7 +22,7 @@ public:
     // BEGIN - Functions ------------ //
     Application();
     Application(int Id, string applicationName);
-    string Application::toString();
+    string toString();
 
     template <typename T>
 

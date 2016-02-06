@@ -30,7 +30,7 @@ public:
     // BEGIN - Functions ------------ //
     OBTabuer();
     OBTabuer(int topologyWidth, int topologyHeight);
-    void OBTabuer::addToTabuList(vector<int> CoreArrangementToTabu);
+    void addToTabuList(vector<int> CoreArrangementToTabu);
     bool isTabued(vector<int> move);
     bool isSame(vector<int> oneMove, vector<int> anotherMove);
     bool isMoveApplicable(vector<int> coreArrangment, SwapMove moveToApply);

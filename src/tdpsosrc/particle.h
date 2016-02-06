@@ -21,8 +21,8 @@ public:
     Particle(int particleID, int size, std::vector<int> initialCondition);
     Particle();
     virtual ~Particle();
-    string Particle::toString();
-    Particle Particle::deepClone();
+    string toString();
+    Particle deepClone();
 	// END - Functions
 
     // BEGIN - Properties

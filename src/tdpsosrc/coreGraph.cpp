@@ -8,10 +8,8 @@
 //=================================================================================================
 
 #include "coregraph.h"
-#include "Matrix.hpp"
 
 using namespace std;
-using namespace YMatrix;
 
 // ---------------------------------------------------------------------------------------------------------------------------
 //
@@ -58,13 +56,12 @@ CoreGraph::~CoreGraph()
 	// TODO Auto-generated destructor stub
 }
 
-MatrixM CoreGraph::getTrafficMatrix()
+int CoreGraph::getTrafficMatrix()
 {
     // Prepare traffic array with column size the same as number of cores and row size the same as number of cores
     int TRAFFIC_ARRAY_SIZE = this->NoOfCores * this->NoOfCores;
     vector<float> trafficVector(TRAFFIC_ARRAY_SIZE,0.0);
     // Setting traffic matrix dimensions as R X C = number of cores X number of cores
-    MatrixM trafficMatrix(this->NoOfCores,this->NoOfCores);
     for(int coreID = 0; coreID < TRAFFIC_ARRAY_SIZE; coreID++)
     {
         // Row Number
@@ -86,10 +83,9 @@ MatrixM CoreGraph::getTrafficMatrix()
                 }
             }
         }
-        trafficMatrix(toCore,fromCore) = foundVolume;
         trafficVector[coreID] = foundVolume;
     }
-    return trafficMatrix;
+    return 0;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------------

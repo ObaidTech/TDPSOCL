@@ -2,14 +2,14 @@
 
 Reading::Reading()
 {
-    this->type = ReadingType::Global;
+    this->type = Global;
 }
 
 Reading::Reading(int IterNo, double aValue)
 {
     this->iterationNo = IterNo;
     this->value = aValue;
-    this->type = ReadingType::Global;
+    this->type = Global;
 }
 
 Reading::Reading(int IterNo, double aValue, ReadingType t)
@@ -24,7 +24,7 @@ Reading::Reading(int IterNo, double aValue, int parID)
     this->iterationNo = IterNo;
     this->value = aValue;
     this->particleID = parID;
-    this->type = ReadingType::ParticleCost;
+    this->type = ParticleCost;
 }
 
 

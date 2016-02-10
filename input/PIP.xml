@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application Id="0" Name="Picture In Picture">
+	<Cores>
+		<Core Id="0" Name="Input Memory 1"/>
+		<Core Id="1" Name="HS"/>
+		<Core Id="2" Name="VS"/>
+		<Core Id="3" Name="JUG1"/>
+		<Core Id="4" Name="Memory"/>
+		<Core Id="5" Name="Input Memory 2"/>
+		<Core Id="6" Name="JUG2"/>
+		<Core Id="7" Name="Output Display"/>
+	</Cores>
+	<CoreGraph Id="0" Name="Display Mode">
+		<Edges>
+			<Edge Id="0" From="0" To="1" Volume="128"/>
+			<Edge Id="1" From="1" To="2" Volume="64"/>
+			<Edge Id="2" From="2" To="3" Volume="64"/>
+			<Edge Id="3" From="3" To="4" Volume="64"/>
+			<Edge Id="4" From="0" To="5" Volume="64"/>
+			<Edge Id="5" From="5" To="6" Volume="64"/>
+			<Edge Id="6" From="6" To="4" Volume="64"/>
+			<Edge Id="7" From="4" To="7" Volume="64"/>
+		</Edges>
+	</CoreGraph>
+</Application>

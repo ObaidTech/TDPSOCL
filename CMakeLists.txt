@@ -3,13 +3,12 @@ project(OpenCLTemplate)
 
 # Setting Variables to use later
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-set(LIB_PATHS $ENV{QTDIR} C:/Windows/System32/DriverStore/FileRepository/nv_dispiwu.inf_amd64_e18c97677f07815e C:/Qt/Tools/QtCreator/bin src/oclshared/lib/x64 src/oclshared/lib/linux src/oclshared src/oclcommon/lib src/oclshared/lib)
+set(LIB_PATHS $ENV{QTDIR} /usr/lib src/oclshared/lib/linux src/oclshared src/oclcommon/lib src/oclshared/lib)
 set(SHARED_INCLUDES src/oclshared/inc)
 set(COMMON_INCLUDES src/oclcommon/inc)
-set(OPENCL_LIBRARIES OpenCL64.dll liboclUtil_x86_64.a libGLEW_x86_64.a libshrutil_x86_64.a)
+set(OPENCL_LIBRARIES OpenCL liboclUtil_x86_64.a libGLEW_x86_64.a libshrutil_x86_64.a)
 set(SOURCE_INCLUDES src/oclsrc src/tdpsosrc)
-
-message( "QT Directory: ${QTDIR}" )
+set( CMAKE_PREFIX_PATH /home/research/mobaidul/Qt/5.5/gcc_64)
 
 file(GLOB TDPSO_SOURCE
         "src/tdpsosrc/*.h"

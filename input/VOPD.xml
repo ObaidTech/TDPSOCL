@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application Id="0" Name="VOPD Video Object Plane Decoder">
+	<Cores>
+		<Core Id="0" Name="VLD"/>
+		<Core Id="1" Name="Run Length Decode"/>
+		<Core Id="2" Name="Inverse Scan"/>
+		<Core Id="3" Name="AC/DC Prediction"/>
+		<Core Id="4" Name="Stripe Memory"/>
+		<Core Id="5" Name="iQuant"/>
+		<Core Id="6" Name="IDCT"/>
+		<Core Id="7" Name="UP SAMPLING"/>
+		<Core Id="8" Name="VOP Reconstruction"/>
+		<Core Id="9" Name="Padding"/>
+		<Core Id="10" Name="VOP Memory"/>
+		<Core Id="11" Name="ARM"/>
+	</Cores>
+	<CoreGraph Id="0" Name="Main Mode">
+		<Edges>
+			<Edge Id="0" From="0" To="1" Volume="70"/>
+			<Edge Id="1" From="1" To="2" Volume="362"/>
+			<Edge Id="2" From="2" To="3" Volume="362"/>
+			<Edge Id="3" From="3" To="5" Volume="362"/>
+			<Edge Id="4" From="3" To="4" Volume="49"/>
+			<Edge Id="5" From="4" To="5" Volume="27"/>
+			<Edge Id="6" From="5" To="6" Volume="357"/>
+			<Edge Id="7" From="6" To="7" Volume="353"/>
+			<Edge Id="8" From="11" To="6" Volume="16"/>
+			<Edge Id="9" From="11" To="9" Volume="16"/>
+			<Edge Id="10" From="7" To="8" Volume="300"/>
+			<Edge Id="11" From="8" To="9" Volume="313"/>
+			<Edge Id="12" From="9" To="10" Volume="313"/>
+			<Edge Id="13" From="10" To="9" Volume="94"/>
+			<Edge Id="14" From="10" To="8" Volume="500"/>
+		</Edges>
+	</CoreGraph>
+</Application>
